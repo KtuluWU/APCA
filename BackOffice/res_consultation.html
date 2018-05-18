@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>APCA</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'; object-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- - - - - - - - - - - - Topbar - - - - - - - - - - - -->
+    <div class="topbar text-white-APCA">
+        <div class="logo">
+            <img src="./img/logo_apca.png" class="logo-img" alt="logo">
+            <span class="logo-title vertical-middle-APCA">BIENVENUE SUR VOTRE ESPACE DÉDIÉ REGISTRE DES ACTIFS AGRICOLES</span>
+        </div>
+        <div class="connection">
+            <span id="lastname_login" class="vertical-middle-APCA name-conn">NOM</span>
+            <span id="firstname_login" class="vertical-middle-APCA name-conn">PRÉNOM</span>
+            <div id="button_deconn" class="vertical-middle-APCA text-center button-deconn cursor-pointer">
+                <i class="material-icons" id="logout">exit_to_app</i>
+                <span>Déconnexion</span>
+            </div>
+        </div>
+        <div class="connection deconnection">
+            <div id="button_deconn" class="vertical-middle-APCA text-center button-deconn cursor-pointer">
+                <i class="material-icons" id="login">exit_to_app</i>
+                <span>Se connecter</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- - - - - - - - - - - - Content - - - - - - - - - - - -->
+    <div class="content">
+        <!-- - - - -  Sidebar  - - - - -->
+        <div class="sidebar text-white-APCA">
+            <div class="text-center title-sidebar">CHAMBRE AGRICULTURE</div>
+            <div class="text-left taps-sidebar">
+                <div class="tap-sidebar">ACCUEIL</div>
+                <div class="tap-sidebar active">CONSULTATION</div>
+            </div>
+        </div>
+
+        <!-- - - - -  Page  - - - - -->
+        <div class="page">
+            <div class="header-page text-white-APCA text-center">CONSULTATION</div>
+            <div class="back-page">
+                <div class="content-page bg-white-APCA text-grey-APCA">
+                    <div class="consultation-res-tip bg-white-APCA text-blue-APCA">
+                        <div>
+                            <img class="consultation-res-table-icon2" src="./img/picto_extrait.png" alt="ATTESTATION D'INSCRIPTION">ATTESTATION D'INSCRIPTION
+                        </div>
+                        <div class="margin-top-10">
+                            <img class="consultation-res-table-icon2" src="./img/picto_copie_int.png" alt="COPIE INTÉGRALE">COPIE INTÉGRALE
+                        </div>
+                        <div class="margin-top-20">Cliquez sur l'icone correspondante pour editer le document</div>
+                    </div>
+                    <table class="consultation-res-table text-center" id="consultation_res_table">
+                        <thead>
+                            <tr class="consultation-res-table-title bg-grey-dark-APCA text-white-APCA">
+                                <th class="a">NOM</th>
+                                <th class="a">PRÉNOM</th>
+                                <th class="a">COMMUNE</th>
+                                <th class="a">SIREN</th>
+                                <th class="a">FORME JURIDIQUE</th>
+                                <th class="a">CODE NAF</th>
+                                <th class="a">ACTIONS
+                                    <i class="material-icons consultation-res-icon" id="consultation_res_icon">help</i>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="consultation-res-table-content">
+                                <td data-th="NOM" class="a">Martin</td>
+                                <td data-th="PRÉNOM" class="a">Jean</td>
+                                <td data-th="COMMUNE" class="a">Vincennes (94)</td>
+                                <td data-th="SIREN" class="a">123465789</td>
+                                <td data-th="SIREN" class="a">SARL</td>
+                                <td data-th="SIREN" class="a">0111Z</td>
+                                <td data-th="DOCUMENTS" class="a">
+                                    <img class="consultation-res-table-icon" id="attestation_1" src="./img/picto_extrait.png" alt="Attestation d'inscription">
+                                    <img class="consultation-res-table-icon" id="copie_1" src="./img/picto_copie_int.png" alt="Copie intégrale">
+                                </td>
+                            </tr>
+                            <tr class="consultation-res-table-content bg-grey-APCA">
+                                <td data-th="NOM" class="a">Martin</td>
+                                <td data-th="PRÉNOM" class="a">Jean</td>
+                                <td data-th="COMMUNE" class="a">Vincennes (94)</td>
+                                <td data-th="SIREN" class="a">123465789</td>
+                                <td data-th="SIREN" class="a">SARL</td>
+                                <td data-th="SIREN" class="a">0111Z</td>
+                                <td data-th="DOCUMENTS" class="a">
+                                    <img class="consultation-res-table-icon" id="attestation_2" src="./img/picto_extrait.png" alt="Attestation d'inscription">
+                                    <img class="consultation-res-table-icon" id="copie_2" src="./img/picto_copie_int.png" alt="Copie intégrale">
+                                </td>
+                            </tr>
+                            <tr class="consultation-res-table-content">
+                                <td data-th="NOM" class="a">Martin</td>
+                                <td data-th="PRÉNOM" class="a">Jean</td>
+                                <td data-th="COMMUNE" class="a">Vincennes (94)</td>
+                                <td data-th="SIREN" class="a">123465789</td>
+                                <td data-th="SIREN" class="a">SARL</td>
+                                <td data-th="SIREN" class="a">0111Z</td>
+                                <td data-th="DOCUMENTS" class="a">
+                                    <img class="consultation-res-table-icon" id="attestation_3" src="./img/picto_extrait.png" alt="Attestation d'inscription">
+                                    <img class="consultation-res-table-icon" id="copie_3" src="./img/picto_copie_int.png" alt="Copie intégrale">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Content -->
+
+
+    <!-- - - - - - - - - - - - Javascript Chargement Différé - - - - - - - - - - - -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
