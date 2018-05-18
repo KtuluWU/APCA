@@ -41,7 +41,7 @@
             <div class="text-center title-sidebar">CHAMBRE AGRICULTURE</div>
             <div class="text-left taps-sidebar">
                 <div class="tap-sidebar">ACCUEIL</div>
-                <div class="tap-sidebar active">CONSULTATION</div>
+                <div class="tap-sidebar sidebar-active">CONSULTATION</div>
             </div>
         </div>
 
@@ -50,6 +50,20 @@
             <div class="header-page text-white-APCA text-center">CONSULTATION</div>
             <div class="back-page">
                 <div class="content-page bg-white-APCA text-grey-APCA">
+                    <div class="title-page text-center">
+                        <span class="text-grey-APCA">
+                            RESULTATS DE RECHERCHE (3)
+                        </span>
+                        <select id="consultation_res_trier" name="consultation_res_trier" class="bg-white-APCA input-border consultation-res-select">
+                            <option disabled selected value="">TRIER</option>
+                            <option value="nom">NOM</option>
+                            <option value="prenom">PRÉNOM</option>
+                            <option value="commune">COMMUNE</option>
+                            <option value="siren">SIREN</option>
+                            <option value="categorie_juridique">CATÉGORIE JURIDIQUE</option>
+                            <option value="code_naf">CODE NAF</option>
+                        </select>
+                    </div>
                     <div class="consultation-res-tip bg-white-APCA text-blue-APCA">
                         <div>
                             <img class="consultation-res-table-icon2" src="./img/picto_extrait.png" alt="ATTESTATION D'INSCRIPTION">ATTESTATION D'INSCRIPTION
@@ -62,56 +76,83 @@
                     <table class="consultation-res-table text-center" id="consultation_res_table">
                         <thead>
                             <tr class="consultation-res-table-title bg-grey-dark-APCA text-white-APCA">
-                                <th class="a">NOM</th>
-                                <th class="a">PRÉNOM</th>
-                                <th class="a">COMMUNE</th>
-                                <th class="a">SIREN</th>
-                                <th class="a">FORME JURIDIQUE</th>
-                                <th class="a">CODE NAF</th>
-                                <th class="a">ACTIONS
+                                <th>NOM</th>
+                                <th>PRÉNOM</th>
+                                <th>COMMUNE</th>
+                                <th>SIREN</th>
+                                <th>CATÉGORIE JURIDIQUE</th>
+                                <th>CODE NAF</th>
+                                <th>ACTIONS
                                     <i class="material-icons consultation-res-icon" id="consultation_res_icon">help</i>
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="consultation-res-table-content">
-                                <td data-th="NOM" class="a">Martin</td>
-                                <td data-th="PRÉNOM" class="a">Jean</td>
-                                <td data-th="COMMUNE" class="a">Vincennes (94)</td>
-                                <td data-th="SIREN" class="a">123465789</td>
-                                <td data-th="SIREN" class="a">SARL</td>
-                                <td data-th="SIREN" class="a">0111Z</td>
-                                <td data-th="DOCUMENTS" class="a">
+                                <td>Martin</td>
+                                <td>Jean</td>
+                                <td>Vincennes (94)</td>
+                                <td>123465789</td>
+                                <td>SARL</td>
+                                <td>0111Z</td>
+                                <td>
                                     <img class="consultation-res-table-icon" id="attestation_1" src="./img/picto_extrait.png" alt="Attestation d'inscription">
                                     <img class="consultation-res-table-icon" id="copie_1" src="./img/picto_copie_int.png" alt="Copie intégrale">
                                 </td>
                             </tr>
                             <tr class="consultation-res-table-content bg-grey-APCA">
-                                <td data-th="NOM" class="a">Martin</td>
-                                <td data-th="PRÉNOM" class="a">Jean</td>
-                                <td data-th="COMMUNE" class="a">Vincennes (94)</td>
-                                <td data-th="SIREN" class="a">123465789</td>
-                                <td data-th="SIREN" class="a">SARL</td>
-                                <td data-th="SIREN" class="a">0111Z</td>
-                                <td data-th="DOCUMENTS" class="a">
+                                <td>Martin</td>
+                                <td>Jean</td>
+                                <td>Vincennes (94)</td>
+                                <td>123465789</td>
+                                <td>SARL</td>
+                                <td>0111Z</td>
+                                <td>
                                     <img class="consultation-res-table-icon" id="attestation_2" src="./img/picto_extrait.png" alt="Attestation d'inscription">
                                     <img class="consultation-res-table-icon" id="copie_2" src="./img/picto_copie_int.png" alt="Copie intégrale">
                                 </td>
                             </tr>
                             <tr class="consultation-res-table-content">
-                                <td data-th="NOM" class="a">Martin</td>
-                                <td data-th="PRÉNOM" class="a">Jean</td>
-                                <td data-th="COMMUNE" class="a">Vincennes (94)</td>
-                                <td data-th="SIREN" class="a">123465789</td>
-                                <td data-th="SIREN" class="a">SARL</td>
-                                <td data-th="SIREN" class="a">0111Z</td>
-                                <td data-th="DOCUMENTS" class="a">
+                                <td>Martin</td>
+                                <td>Jean</td>
+                                <td>Vincennes (94)</td>
+                                <td>123465789</td>
+                                <td>SARL</td>
+                                <td>0111Z</td>
+                                <td>
                                     <img class="consultation-res-table-icon" id="attestation_3" src="./img/picto_extrait.png" alt="Attestation d'inscription">
                                     <img class="consultation-res-table-icon" id="copie_3" src="./img/picto_copie_int.png" alt="Copie intégrale">
                                 </td>
                             </tr>
                         </tbody>
                     </table>
+                    <div class="consultation-res-pages-block">
+                        <div class="consultation-res-pages text-center">
+                            <div></div>
+                            <div class="consultation-res-line text-blue-APCA">
+                                <span class="">Résultats par page</span>
+                                <span class="a active" id="page_25">25</span>
+                                <span class="b" id="page_50">50</span>
+                                <span class="c" id="page_100">100</span>
+                            </div>
+                        </div>
+                        <div class="consultation-res-pages text-center">
+                            <div></div>
+                            <div class="consultation-res-marks text-blue-APCA">
+                                <span class="a cursor-pointer">
+                                    <i class="material-icons page-icons">keyboard_arrow_left</i>
+                                </span>
+                                <span class="a cursor-pointer active" id="page_1">1</span>
+                                <span class="a cursor-pointer" id="page_2">2</span>
+                                <span class="a cursor-pointer" id="page_3">3</span>
+                                <span class="a cursor-pointer" id="page_4">4</span>
+                                <span class="a cursor-pointer" id="page_5">5</span>
+                                <span class="a cursor-pointer">
+                                    <i class="material-icons page-icons">keyboard_arrow_right</i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
