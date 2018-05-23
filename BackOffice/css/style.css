@@ -126,7 +126,7 @@
 
 .back-page {
     background-color: var(--backgroud-dark);
-    padding: 50px 0;
+    padding: 30px 0;
     overflow-y: auto;
     position: fixed;
     top: 120px;
@@ -149,6 +149,10 @@
 .article-page {
     padding: 0 20px 50px 20px;
     text-align: justify;
+}
+
+.article-page ul li {
+    padding: 10px 0;
 }
 
 /********************************* Consultation ***********************************/
@@ -180,9 +184,10 @@
 
 /********************************* Resultats Consultation ***********************************/
 
-.consultation-res-table {
+.consultation-res-table, .fiches-en-erreur-table, .extraction-table {
     width: 97%;
-    margin: auto;
+    margin-top: 0 !important;
+    margin: 20px auto;
 }
 
 .consultation-res-table-icon, .consultation-res-table-icon2 {
@@ -210,7 +215,7 @@ th, td {
     border-radius: 5px;
     box-shadow: 13px 16px 34px var(--grey-dark);
     width: 500px;
-    height: 250px;
+    height: 350px;
     margin: auto;
     position: absolute;
     right: calc(37% - 40% / 2);
@@ -328,10 +333,95 @@ input#tiers {
     margin-left: 35px;
 }
 
+.res-detail-return {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.res-detail-return-icon {
+    vertical-align: -6px;
+    font-size: 23px
+}
+
 /********************************* Resultats Erreurs Consultation ***********************************/
 
 .consultation-res-error-tip {
     height: 230px !important;
+}
+
+/********************************* Fiches en erreur ***********************************/
+
+.fee-raf {
+    position: absolute;
+    right: 4%;
+    top: 112px;
+}
+
+.fee-raf2 {
+    padding-bottom: 20px;
+    width: 97%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/********************************* Extraction ***********************************/
+
+.extraction-content-page {
+    margin-bottom: 70px;
+}
+
+.extraction-histo {
+    padding: 0 30px 30px 30px;
+}
+
+.extraction-telecharment {
+    padding: 20px;
+}
+
+.extraction-periode-title {
+    position: absolute;
+    left: 85px;
+    top: 142px;
+    z-index: 999;
+    padding: 5px 20px;
+    background-color: var(--white);
+}
+
+.extraction-calendar {
+    height: 20px;
+    vertical-align: -3px;
+}
+
+.extraction-periode {
+    display: flex;
+    width: 600px;
+    padding: 20px 30px;
+    border: 1px solid var(--grey-dark);
+    border-radius: 5px;
+}
+
+.extraction-calendar-line {
+    margin: 0 20px;
+}
+
+.extraction-periode-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.extraction-histo-btn {
+    float: right;
+    position: relative;
+    top: -55px;
+}
+
+.extraction-title {
+    padding: 20px 0 !important;
+    margin-bottom: 10px;
+    background-color: var(--grey-dark);
 }
 
 /********************************* Administrateur ***********************************/
@@ -375,6 +465,107 @@ input#tiers {
     float: right;
     top: -90px;
     position: relative;
+}
+
+/********************************* Fiche ***********************************/
+
+.fiche-content {
+    width: 100%;
+    margin: auto;
+}
+
+.fiche-title {
+    padding: 50px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.fiche-icon {
+    height: 33px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.fiche-table {
+    width: 77%;
+    margin: auto;
+}
+
+.fiche-table-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 27%;
+    padding-bottom: 20px;
+}
+
+.fiche-table th, .fiche-table td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.fiche-table th {
+    width: 60%;
+    font-weight: 500;
+    padding-left: 20%;
+}
+
+.fiche-table-block:not(:last-child) {
+    margin-bottom: 200px;
+}
+
+.fiche-table-block:last-child {
+    margin-bottom: 100px;
+}
+
+.fiche-return {
+    position: absolute;
+    top: 28px;
+    right: 12%;
+}
+
+.fiche-return2 {
+    position: relative;
+    float: right;
+    bottom: 20px;
+    right: 12%;
+}
+
+.btn-correction {
+    position: absolute;
+    right: 12%;
+    top: 120px;
+}
+
+.btn-correction2 {
+    position: relative;
+    float: right;
+    bottom: 70px;
+    right: 12%;
+}
+
+.fiche-confirm-block {
+    display: none;
+    position: fixed;
+    border: 1px solid var(--backgroud-dark);
+    border-radius: 4px;
+    box-shadow: 13px 16px 34px var(--grey-dark);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 400px;
+    left: calc(50% - 25% / 2);
+    right: calc(50% - 25% / 2);
+    max-width: 50%;
+    max-height: 470px;
+    z-index: 9999;
+}
+
+.fiche-confirm-buttons {
+    margin-top: 20px;
+}
+
+.fiche-confirm-btn {
+    padding: 5px 15px;
+    margin: 0 15px;
 }
 
 /********************************* Tools ***********************************/

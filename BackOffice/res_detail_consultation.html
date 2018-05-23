@@ -40,18 +40,26 @@
         <div class="sidebar text-white-APCA">
             <div class="text-center title-sidebar">CHAMBRE AGRICULTURE</div>
             <div class="text-left taps-sidebar">
-                <div class="tap-sidebar">ACCUEIL</div>
-                <div class="tap-sidebar sidebar-active">CONSULTATION</div>
+                <div class="tap-sidebar" id="accueil_page">ACCUEIL</div>
+                <div class="tap-sidebar sidebar-active" id="consultation_page">CONSULTATION / CORRECTION</div>
+                <div class="tap-sidebar" id="fiches_en_erreur_page">FICHES EN ERREUR</div>
+                <div class="tap-sidebar" id="extraction_page">EXTRACTION</div>
             </div>
         </div>
 
         <!-- - - - -  Page  - - - - -->
         <div class="page">
-            <div class="header-page text-white-APCA text-center">CONSULTATION</div>
+            <div class="header-page text-white-APCA text-center">CONSULTATION / CORRECTION</div>
             <div class="back-page">
                 <div class="content-page text-grey-APCA">
                     <div class="consultation-res-tip bg-white-APCA text-blue-APCA">
                         <div>
+                            <img class="consultation-res-table-icon2" src="./img/icon_eye.png" alt="VISUALISATION">VISUALISATION
+                        </div>
+                        <div class="margin-top-10">
+                            <img class="consultation-res-table-icon2" src="./img/icon_modif.png" alt="CORRECTION">CORRECTION
+                        </div>
+                        <div class="margin-top-10">
                             <img class="consultation-res-table-icon2" src="./img/picto_extrait.png" alt="ATTESTATION D'INSCRIPTION">ATTESTATION D'INSCRIPTION
                         </div>
                         <div class="margin-top-10">
@@ -59,9 +67,14 @@
                         </div>
                         <div class="margin-top-20">Cliquez sur l'icone correspondante pour editer le document</div>
                     </div>
+                    <div class="res-detail-return">
+                        <span></span>
+                        <a href="./res_consultation.html" class="text-grey-APCA">
+                            <i class="material-icons res-detail-return-icon" id="back_to_res">arrow_back</i> Retour aux résultats</a>
+                    </div>
                     <table class="consultation-res-table text-center bg-white-APCA" id="consultation_res_table">
                         <thead>
-                            <tr class="consultation-res-table-title bg-grey-dark-APCA text-white-APCA">
+                            <tr class="bg-grey-dark-APCA text-white-APCA">
                                 <th>NOM</th>
                                 <th>PRÉNOM</th>
                                 <th>COMMUNE</th>
@@ -74,7 +87,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="consultation-res-table-content">
+                            <tr>
                                 <td>Martin</td>
                                 <td>Jean</td>
                                 <td>Vincennes (94)</td>
@@ -82,6 +95,8 @@
                                 <td>SARL</td>
                                 <td>0111Z</td>
                                 <td>
+                                    <img class="consultation-res-table-icon" id="visualisation_2" src="./img/icon_eye.png" alt="Visualisation">
+                                    <img class="consultation-res-table-icon" id="correction_2" src="./img/icon_modif.png" alt="Correction">
                                     <img class="consultation-res-table-icon" id="attestation_1" src="./img/picto_extrait.png" alt="Attestation d'inscription">
                                     <img class="consultation-res-table-icon" id="copie_1" src="./img/picto_copie_int.png" alt="Copie intégrale">
                                 </td>

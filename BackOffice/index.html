@@ -40,8 +40,10 @@
         <div class="sidebar text-white-APCA">
             <div class="text-center title-sidebar">CHAMBRE AGRICULTURE</div>
             <div class="text-left taps-sidebar">
-                <div class="tap-sidebar sidebar-active">ACCUEIL</div>
-                <div class="tap-sidebar">CONSULTATION</div>
+                <div class="tap-sidebar sidebar-active" id="accueil_page">ACCUEIL</div>
+                <div class="tap-sidebar" id="consultation_page">CONSULTATION / CORRECTION</div>
+                <div class="tap-sidebar" id="fiches_en_erreur_page">FICHES EN ERREUR</div>
+                <div class="tap-sidebar" id="extraction_page">EXTRACTION</div>
             </div>
         </div>
 
@@ -50,26 +52,44 @@
             <div class="header-page text-white-APCA text-center">ACCUEIL</div>
             <div class="back-page">
                 <div class="content-page bg-white-APCA text-grey-APCA">
-                    <div class="text-center title-page">BIENVENUE SUR VOTRE ESPACE DÉDIÉ</div>
+                    <div class="text-center title-page">BIENVENUE SUR VOTRE ESPACE DEDIE REGISTRE DES ACTIFS AGRICOLES</div>
                     <div class="article-page">
                         <p>
-                            Accéder aux dossiers de déclarations de plus de 450 000 chefs d'exploitations agricoles affiliés ATEXA ou dirigeant SA/SAS,
-                            En quelques clics, ajoutez à votre panier les documents des actifs agricoles, inscrits au Registre,
-                            qui vous interessent. Accéder aux dossiers de déclarations de plus de 450 000 chefs d'exploitations
-                            agricoles affiliés ATEXA ou dirigeant SA/SAS, En quelques clics, ajoutez à votre panier les documents
-                            des actifs agricoles, inscrits au Registre, qui vous interessent. Accéder aux dossiers de déclarations
-                            de plus de 450 000 chefs d'exploitations agricoles affiliés ATEXA ou dirigeant SA/SAS, En quelques
-                            clics, ajoutez à votre panier les documents des actifs agricoles, inscrits au Registre, qui vous
-                            interessent. Accéder aux dossiers de déclarations de plus de 450 000 chefs d'exploitations agricoles
-                            affiliés ATEXA ou dirigeant SA/SAS, En quelques clics, ajoutez à votre panier les documents des
-                            actifs agricoles, inscrits au Registre, qui vous interessent.
+                            La fonction back office du site internet registre des actifs agricoles est une interface de gestion réservée aux administrateurs
+                            locaux (agents et responsables CFE/RAA) et à l’administrateur national APCA.
                         </p>
                         <p>
-                            Accéder aux dossiers de déclarations de plus de 450 000 chefs d'exploitations agricoles affiliés ATEXA ou dirigeant SA/SAS,
-                            En quelques clics, ajoutez à votre panier les documents des actifs agricoles, inscrits au Registre,
-                            qui vous interessent. Accéder aux dossiers de déclarations de plus de 450 000 chefs d'exploitations
-                            agricoles affiliés ATEXA ou dirigeant SA/SAS, En quelques clics, ajoutez à votre panier les documents
-                            des actifs agricoles, inscrits au Registre, qui vous interessent.
+                            <span>Cette interface présente plusieurs onglets :</span>
+                            <ul>
+                                <li>
+                                    <span class="font-weight-bold">CONSULTATION/ CORRECTION</span> permet de visualiser et/ou de corriger la fiche d’un
+                                    actif agricole et d’éditer (à titre gratuit pour l’actif ou à titre payant pour le tiers)
+                                    les différents documents. La fonction correction permet à l’administrateur de corriger
+                                    une donnée (ex : prénom tronqué, adresse de l’exploitation), ou d’attribuer un code NAF
+                                    pour une activité secondaire. Attention, toute modification relevant d’un évènement CFE
+                                    <span class="font-weight-bold">doit obligatoirement passer par le circuit CFE</span> (ces évènements CFE seront historisés
+                                    dans la copie intégrale des mentions).
+                                </li>
+                                <li>
+                                    <span class="font-weight-bold">RADIATION</span> affiche les personnes inscrites au registre ne répondant plus aux conditions
+                                    d’inscription. Deux fonctions possibles : la radiation de l’actif et le téléchargement
+                                    de son attestation de radiation.
+                                </li>
+                                <li>
+                                    <span class="font-weight-bold">FICHES EN ERREUR</span> permet d’afficher les actifs pour lesquels les flux apporteurs
+                                    de données ont remonté des données conflictuelles à corriger.
+                                </li>
+                                <li>
+                                    <span class="font-weight-bold">FICHES EN ATTENTE ATEXA</span> permet d’afficher les personnes transmises dans le flux
+                                    CFE susceptibles d’être inscrites au registre, sous réserve d’être affiliées en ATEXA.
+                                    Le système prévoit un délai de 3 ans avant purge de la fiche en attente.
+                                </li>
+                                <li>
+                                    <span class="font-weight-bold">EXTRACTION</span> permet de consulter et télécharger l’activité registre du CFE sur une
+                                    période précise ainsi que l’historique des commandes pour la tenue du registre chronologique
+                                    des formalités effectuées et des redevances perçues.
+                                </li>
+                            </ul>
                         </p>
                     </div>
                 </div>

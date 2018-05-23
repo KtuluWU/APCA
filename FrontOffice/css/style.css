@@ -71,6 +71,10 @@ th, td {
     background-color: var(--backgroud-light);
 }
 
+.bg-grey-dark-APCA {
+    background-color: var(--grey);
+}
+
 .text-red-APCA {
     color: var(--red);
 }
@@ -509,7 +513,7 @@ th, td {
 }
 
 .open {
-    max-height: 128px;
+    max-height: 600px;
     opacity: 1;
 }
 
@@ -865,6 +869,43 @@ TABLE {
 
 .justif-table tbody {
     border-bottom: 1px solid var(--grey);
+}
+
+/****************************** CGV CGU ********************************/
+.cgv-annuaire-title {
+    padding: 30px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cgv-title {
+    padding: 10px 0;
+}
+
+.cgv-article-block:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.cgv-article-block:last-child {
+    margin-bottom: 50px;
+}
+
+/****************************** Annuaire ********************************/
+
+.annuaire-table {
+    width: 100%;
+}
+
+.annuaire-table thead th {
+    padding: 20px 15px;
+}
+
+.annuaire-table tbody tr {
+    height: 92px;
+}
+
+.annuaire-table-block {
+    margin-bottom: 50px;
 }
 
 /********************************* Contact ***********************************/

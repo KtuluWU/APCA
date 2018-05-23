@@ -41,58 +41,29 @@
             <div class="text-center title-sidebar">CHAMBRE AGRICULTURE</div>
             <div class="text-left taps-sidebar">
                 <div class="tap-sidebar" id="accueil_page">ACCUEIL</div>
-                <div class="tap-sidebar sidebar-active" id="consultation_page">CONSULTATION / CORRECTION</div>
-                <div class="tap-sidebar" id="fiches_en_erreur_page">FICHES EN ERREUR</div>
+                <div class="tap-sidebar" id="consultation_page">CONSULTATION / CORRECTION</div>
+                <div class="tap-sidebar sidebar-active" id="fiches_en_erreur_page">FICHES EN ERREUR</div>
                 <div class="tap-sidebar" id="extraction_page">EXTRACTION</div>
             </div>
         </div>
 
         <!-- - - - -  Page  - - - - -->
         <div class="page">
-            <div class="header-page text-white-APCA text-center">CONSULTATION / CORRECTION</div>
+            <div class="header-page text-white-APCA text-center">FICHES EN ERREUR</div>
             <div class="back-page">
                 <div class="content-page bg-white-APCA text-grey-APCA">
                     <div class="title-page text-center">
-                        <span class="text-grey-APCA">
-                            RESULTATS DE RECHERCHE (3)
-                        </span>
-                        <select id="consultation_res_trier" name="consultation_res_trier" class="bg-white-APCA input-border consultation-res-select">
-                            <option disabled selected value="">TRIER</option>
-                            <option value="nom">NOM</option>
-                            <option value="prenom">PRÉNOM</option>
-                            <option value="commune">COMMUNE</option>
-                            <option value="siren">SIREN</option>
-                            <option value="categorie_juridique">CATÉGORIE JURIDIQUE</option>
-                            <option value="code_naf">CODE NAF</option>
-                        </select>
+                        NOMBRES DE FICHES EN ERREUR : 7
                     </div>
-                    <div class="consultation-res-tip bg-white-APCA text-blue-APCA">
-                        <div>
-                            <img class="consultation-res-table-icon2" src="./img/icon_eye.png" alt="VISUALISATION">VISUALISATION
-                        </div>
-                        <div class="margin-top-10">
-                            <img class="consultation-res-table-icon2" src="./img/icon_modif.png" alt="CORRECTION">CORRECTION
-                        </div>
-                        <div class="margin-top-10">
-                            <img class="consultation-res-table-icon2" src="./img/picto_extrait.png" alt="ATTESTATION D'INSCRIPTION">ATTESTATION D'INSCRIPTION
-                        </div>
-                        <div class="margin-top-10">
-                            <img class="consultation-res-table-icon2" src="./img/picto_copie_int.png" alt="COPIE INTÉGRALE">COPIE INTÉGRALE
-                        </div>
-                        <div class="margin-top-20">Cliquez sur l'icone correspondante pour editer le document</div>
-                    </div>
-                    <table class="consultation-res-table text-center" id="consultation_res_table">
+                    <div class="fee-raf bg-yellow-APCA text-blue-APCA underline btn">Rafraichir les résultats</div>
+                    <table class="fiches-en-erreur-table text-center" id="consultation_res_table">
                         <thead>
                             <tr class="bg-grey-dark-APCA text-white-APCA">
                                 <th>NOM</th>
                                 <th>PRÉNOM</th>
                                 <th>COMMUNE</th>
                                 <th>SIREN</th>
-                                <th>CATÉGORIE JURIDIQUE</th>
-                                <th>CODE NAF</th>
-                                <th>ACTIONS
-                                    <i class="material-icons consultation-res-icon" id="consultation_res_icon">help</i>
-                                </th>
+                                <th>FICHE DÉTAILLÉE</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -101,13 +72,8 @@
                                 <td>Jean</td>
                                 <td>Vincennes (94)</td>
                                 <td>123465789</td>
-                                <td>SARL</td>
-                                <td>0111Z</td>
                                 <td>
-                                    <img class="consultation-res-table-icon" id="visualisation_1" src="./img/icon_eye.png" alt="Visualisation">
-                                    <img class="consultation-res-table-icon" id="correction_1" src="./img/icon_modif.png" alt="Correction">
-                                    <img class="consultation-res-table-icon" id="attestation_1" src="./img/picto_extrait.png" alt="Attestation d'inscription">
-                                    <img class="consultation-res-table-icon" id="copie_1" src="./img/picto_copie_int.png" alt="Copie intégrale">
+                                    <a href="./erreurs.html" class="text-grey-APCA underline" target="_blank">Consulter</a>
                                 </td>
                             </tr>
                             <tr class="bg-grey-APCA">
@@ -115,13 +81,8 @@
                                 <td>Jean</td>
                                 <td>Vincennes (94)</td>
                                 <td>123465789</td>
-                                <td>SARL</td>
-                                <td>0111Z</td>
                                 <td>
-                                    <img class="consultation-res-table-icon" id="visualisation_2" src="./img/icon_eye.png" alt="Visualisation">
-                                    <img class="consultation-res-table-icon" id="correction_2" src="./img/icon_modif.png" alt="Correction">
-                                    <img class="consultation-res-table-icon" id="attestation_2" src="./img/picto_extrait.png" alt="Attestation d'inscription">
-                                    <img class="consultation-res-table-icon" id="copie_2" src="./img/picto_copie_int.png" alt="Copie intégrale">
+                                    <a href="./erreurs.html" class="text-grey-APCA underline" target="_blank">Consulter</a>
                                 </td>
                             </tr>
                             <tr>
@@ -129,18 +90,49 @@
                                 <td>Jean</td>
                                 <td>Vincennes (94)</td>
                                 <td>123465789</td>
-                                <td>SARL</td>
-                                <td>0111Z</td>
                                 <td>
-                                    <img class="consultation-res-table-icon" id="visualisation_3" src="./img/icon_eye.png" alt="Visualisation">
-                                    <img class="consultation-res-table-icon" id="correction_3" src="./img/icon_modif.png" alt="Correction">
-                                    <img class="consultation-res-table-icon" id="attestation_3" src="./img/picto_extrait.png" alt="Attestation d'inscription">
-                                    <img class="consultation-res-table-icon" id="copie_3" src="./img/picto_copie_int.png" alt="Copie intégrale">
+                                    <a href="./erreurs.html" class="text-grey-APCA underline" target="_blank">Consulter</a>
+                                </td>
+                            </tr>
+                            <tr class="bg-grey-APCA">
+                                <td>Martin</td>
+                                <td>Jean</td>
+                                <td>Vincennes (94)</td>
+                                <td>123465789</td>
+                                <td>
+                                    <a href="./erreurs.html" class="text-grey-APCA underline" target="_blank">Consulter</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Martin</td>
+                                <td>Jean</td>
+                                <td>Vincennes (94)</td>
+                                <td>123465789</td>
+                                <td>
+                                    <a href="./erreurs.html" class="text-grey-APCA underline" target="_blank">Consulter</a>
+                                </td>
+                            </tr>
+                            <tr class="bg-grey-APCA">
+                                <td>Martin</td>
+                                <td>Jean</td>
+                                <td>Vincennes (94)</td>
+                                <td>123465789</td>
+                                <td>
+                                    <a href="./erreurs.html" class="text-grey-APCA underline" target="_blank">Consulter</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Martin</td>
+                                <td>Jean</td>
+                                <td>Vincennes (94)</td>
+                                <td>123465789</td>
+                                <td>
+                                    <a href="./erreurs.html" class="text-grey-APCA underline" target="_blank">Consulter</a>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
-                    <div class="consultation-res-pages-block">
+                    <div class="consultation-res-pages-block fiches-en-erreur-pages-block">
                         <div class="consultation-res-pages text-center">
                             <div></div>
                             <div class="consultation-res-line text-blue-APCA">
@@ -166,6 +158,10 @@
                                 </span>
                             </div>
                         </div>
+                    </div>
+                    <div class="fee-raf2">
+                        <div></div>
+                        <div class="bg-yellow-APCA text-blue-APCA underline btn">Rafraichir les résultats</div>
                     </div>
                 </div>
             </div>
