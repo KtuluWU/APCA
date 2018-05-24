@@ -463,6 +463,11 @@ th, td {
 
 .search-return-pages-line {
     display: flex;
+    margin-bottom: 20px;
+}
+
+.search-return-pagination {
+    float: right;
 }
 
 .search-return-pages-line .a {
@@ -656,6 +661,25 @@ th, td {
     border-radius: 5px;
     border: 1px solid var(--green);
     z-index: 999;
+}
+
+.panier-doublon-confirm {
+    display: none;
+    position: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    top: 350px;
+    left: calc(50% - 40% / 2);
+    right: calc(50% - 40% / 2);
+    max-width: 50%;
+    max-height: 480px;
+    border-radius: 5px;
+    border: 1px solid var(--green);
+    z-index: 999;
+}
+
+.panier-doublon-confirm-title {
+    font-size: 25px;
 }
 
 @media only screen and (max-width: 769px) {
@@ -872,6 +896,7 @@ TABLE {
 }
 
 /****************************** CGV CGU ********************************/
+
 .cgv-annuaire-title {
     padding: 30px;
     font-size: 25px;
@@ -1016,6 +1041,23 @@ TABLE {
     .footer-links {
         text-align: center;
     }
+}
+
+/********************************* Errors ***********************************/
+
+.tip_error-line {
+    width: 94%;
+    margin: auto;
+}
+
+.tip_error {
+    text-align: left !important;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.search-advanced-block .tip_error-line {
+    width: 97%;
 }
 
 /********************************* Color ***********************************/
