@@ -68,6 +68,11 @@
     padding: 20px 0;
 }
 
+.taps-sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
 .tap-sidebar {
     font-size: 17px;
     font-weight: 400;
@@ -571,7 +576,7 @@ input#tiers {
 /********************************* Tools ***********************************/
 
 .text-white-APCA {
-    color: var(--white);
+    color: var(--white) !important;
 }
 
 .text-grey-APCA {
@@ -641,6 +646,10 @@ input#tiers {
 
 .cursor-pointer {
     cursor: pointer;
+}
+
+a:hover{
+    text-decoration: none;
 }
 
 /********************************* Color ***********************************/

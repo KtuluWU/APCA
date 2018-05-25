@@ -23,34 +23,4 @@ $(document).ready(function () {
     })
     /***********************************************************************************************/
 
-
-    /************************* Résultats consultation "JUMPS" *************************/
-    $("img[id^='visualisation_']").each(function () {
-        $(this).click(function () {
-            window.open('./visualisation.html', '_blank');
-        })
-    })
-    $("img[id^='correction_']").each(function () {
-        $(this).click(function () {
-            window.open('./correction.html', '_blank');
-        })
-    })
-
-
-    /************************* sidebar *************************/
-    $("#accueil_page").click(function () {
-        window.location.href = "./index.html";
-    })
-    $("#consultation_page").click(function () {
-        window.location.href = "./consultation.html";
-    })
-    $("#fiches_en_erreur_page").click(function () {
-        window.location.href = "./fiches_en_erreur.html";
-    })
-    $("#extraction_page").click(function () {
-        window.location.href = "./extraction.html";
-    })
-    $("#admin_page").click(function () {
-        window.location.href = "./admin.html";
-    })
 })
