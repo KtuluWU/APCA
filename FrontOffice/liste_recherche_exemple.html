@@ -19,14 +19,14 @@
                 <img class="img-buger-menu" src="./img/hamburger_menus.png" height="50" alt="Menu">
             </a>
             <div class="dropdown-menu">
-                <a class="dropdown-item item-APCA text-blue-APCA" href="#">Annuaire des CFE</a>
-                <a class="dropdown-item item-APCA text-blue-APCA" href="#">Conditions générales d'utilisation et de vente</a>
-                <a class="dropdown-item item-APCA text-blue-APCA" href="#contact">Contact</a>
-                <a class="dropdown-item item-APCA text-blue-APCA" href="#">Accès réservé CFE</a>
+                <a class="dropdown-item item-APCA text-grey-dark-APCA" href="#">Annuaire des CFE</a>
+                <a class="dropdown-item item-APCA text-grey-dark-APCA" href="#">Conditions générales d'utilisation et de vente</a>
+                <a class="dropdown-item item-APCA text-grey-dark-APCA" href="#contact">Contact</a>
+                <a class="dropdown-item item-APCA text-grey-dark-APCA" href="#">Accès réservé CFE</a>
             </div>
 
             <div class="text-center col-8">
-                <span class="text-white-APCA title cursor-pointer" onClick="location.href='index.html'">LE REGISTRE DES ACTIFS AGRICOLES</span>
+                <span class="text-white-APCA topbar-title cursor-pointer" onClick="location.href='index.html'">LE REGISTRE DES ACTIFS AGRICOLES</span>
                 <form id="form_search_advanced_top" name="form_search_advanced_top" method="get" action="" class="no-padding input-group">
                     <i class="material-icons icon-search" id="basic-addon1">search</i>
                     <input type="search" id="input_search_topbar" name="input_search_topbar" maxlength="100" class="input-search form-control"
@@ -52,7 +52,7 @@
 
     <!-- - - - - - - - - - - - Searche Advanced - - - - - - - - - - - -->
     <div class="search-advanced-block">
-        <div class="search-advanced bg-grey-APCA text-blue-APCA">
+        <div class="search-advanced bg-grey-APCA text-grey-dark-APCA">
             <i class="material-icons icon-close cursor-pointer">close</i>
             <div class=" col-md-4 col-sm-4 col-6 search-advanced-title">
                 <span class="nowrap">RECHERCHE AVANCÉE</span>
@@ -84,7 +84,7 @@
                 </div>
                 <div class="nomargin search-advanced-buttonline">
                     <span class="search-advanced-tip">* champs obligatoires</span>
-                    <input type="submit" id="btn_sa" name="btn_sa" value="Lancer la recherche" class="btn bg-yellow-APCA text-blue-APCA underline">
+                    <input type="submit" id="btn_sa" name="btn_sa" value="Lancer la recherche" class="btn bg-yellow-APCA text-white-APCA underline">
                 </div>
             </form>
         </div>
@@ -95,13 +95,13 @@
 
         <!-- - - - - - - - - - - - Logo - - - - - - - - - - - -->
         <div class="bg-white-APCA logo ">
-            <img class="logo-APCA" src="./img/header_uni.jpg" alt="logo">
+            <img class="logo-APCA" src="./img/header.jpg" alt="logo">
         </div>
 
         <!-- - - - - - - - - - - - Searche Return - - - - - - - - - - - -->
         <div class="search-return parag" id="search_return">
             <div class="search-return-title text-center">
-                <span class="search-return-subtitle text-blue-APCA">
+                <span class="search-return-subtitle title text-grey-dark-APCA">
                     RESULTATS DE RECHERCHE (8)
                 </span>
                 <select id="sr_trier" name="sr_trier" class="bg-white-APCA input-border search-return-select">
@@ -112,8 +112,8 @@
                     <option value="siren">SIREN</option>
                 </select>
             </div>
-            <div class="search-return-contents text-blue-APCA">
-                <div class="search-return-tip bg-white-APCA text-blue-APCA">
+            <div class="search-return-contents text-grey-dark-APCA">
+                <div class="search-return-tip bg-white-APCA text-grey-dark-APCA">
                     <div>
                         <img class="search-return-table-icon2 cursor-pointer" src="./img/picto_extrait.png" alt="ATTESTATION D'INSCRIPTION">ATTESTATION D'INSCRIPTION
                     </div>
@@ -240,7 +240,7 @@
             </div>
             <div class="search-return-pages text-center">
                 <div></div>
-                <div class="search-return-pages-line text-blue-APCA">
+                <div class="search-return-pages-line text-grey-dark-APCA">
                     <span class="">Résultats par page</span>
                     <span class="a active" id="page_25">25</span>
                     <span class="b" id="page_50">50</span>
@@ -249,7 +249,7 @@
             </div>
             <div class="search-return-pages text-center">
                 <div></div>
-                <div class="search-return-pages-marks text-blue-APCA">
+                <div class="search-return-pages-marks text-grey-dark-APCA">
                     <span class="a cursor-pointer">
                         <i class="material-icons page-icons">keyboard_arrow_left</i>
                     </span>
@@ -266,16 +266,16 @@
         </div>
 
         <!-- - - - - - - - - - - - Contact - - - - - - - - - - - -->
-        <div class="contact parag" id="contact">
+        <div class="contact parag text-grey-dark-APCA" id="contact">
             <form id="form_contact" name="form_contact" method="post" action="" class="contact-form bg-grey-APCA" onsubmit="return contact_check()">
-                <div class="contact-title">
-                    <h5 class="text-blue-APCA text-center">CONTACT</h5>
+                <div class="">
+                    <div class="text-center title">CONTACT</div>
                 </div>
                 <div>
                     <div class="row contact-email-line">
-                        <input type="email" id="contact_email" name="contact_email" maxlength="50" class="input-contact col-md-6 input-border border-red"
+                        <input type="email" id="contact_email" name="contact_email" maxlength="50" class="input-contact col-md-6 input-border border-red aa"
                             autocomplete="off" placeholder="E-mail *">
-                        <select id="contact_objet" name="contact_objet" class="col-md-3 bg-white-APCA select-contact input-border">
+                        <select id="contact_objet" name="contact_objet" class="col-md-3 bg-white-APCA text-grey-light-APCA input-border aa">
                             <option disabled selected value="-1">Objet *</option>
                             <option value="paiement">Paiement</option>
                             <option value="inscription">Inscription registre</option>
@@ -283,14 +283,15 @@
                         </select>
                     </div>
                     <div class="textarea-contact-line">
-                        <textarea id="contact_msg" name="contact_msg" class="input-border textarea-contact" autocomplete="off" maxlength="500" placeholder="Message *"></textarea>
+                        <textarea id="contact_msg" name="contact_msg" class="input-border textarea-contact aa" autocomplete="off" maxlength="500"
+                            placeholder="Message *"></textarea>
                     </div>
                     <div class="tip_contact-line">
                         <span id="tip_contact" class="tip_contact text-red-APCA">Format d'e-mail invalide</span>
                     </div>
                     <div class="contact-button-line">
                         <span class="search-advanced-tip">* champs obligatoires</span>
-                        <input type="submit" id="btn_contact" name="btn_contact" value="Envoyer" class="btn bg-yellow-APCA text-blue-APCA">
+                        <input type="submit" id="btn_contact" name="btn_contact" value="Envoyer" class="btn bg-yellow-APCA text-white-APCA">
                     </div>
                 </div>
             </form>

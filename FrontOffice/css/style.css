@@ -1,13 +1,13 @@
-.input-search::-moz-placeholder {
-    color: var(--backgroud-dark);
+.input-search::-moz-placeholder, .contact .aa::-moz-placeholder {
+    color: var(--grey-light);
 }
 
-.input-search::-webkit-input-placeholder {
-    color: var(--backgroud-dark);
+.input-search::-webkit-input-placeholder, .contact .aa::-webkit-input-placeholder {
+    color: var(--grey-light);
 }
 
-.input-search:-ms-input-placeholder {
-    color: var(--backgroud-dark);
+.input-search:-ms-input-placeholder, .contact .aa::-ms-input-placeholder {
+    color: var(--grey-light);
 }
 
 @media only screen and (min-width: 528px) {
@@ -39,11 +39,22 @@
     }
 }
 
+body {
+    font-family: Roboto ;
+}
+
 .content {
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+}
+
+.btn {
+    font-family: Roboto !important;
+    padding: 6px 30px;
+    border-radius: 8px;
+    text-decoration: none !important;
 }
 
 th, td {
@@ -68,7 +79,7 @@ th, td {
 }
 
 .bg-grey-APCA {
-    background-color: var(--backgroud-light);
+    background-color: var(--backgroud-grey);
 }
 
 .bg-grey-dark-APCA {
@@ -91,8 +102,12 @@ th, td {
     color: var(--white);
 }
 
-.text-grey-APCA {
+.text-grey-dark-APCA {
     color: var(--grey);
+}
+
+.text-grey-light-APCA {
+    color: var(--grey-light);
 }
 
 .parag {
@@ -190,6 +205,26 @@ th, td {
     }
 }
 
+.title {
+    font-family: Poppins;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+/********************************* Fonts *********************************/
+
+@font-face {
+    /* font-properties */
+    font-family: Poppins;
+    src: url('./fonts/Poppins/poppins/Poppins-SemiBold.ttf.ttf');
+}
+
+@font-face {
+    /* font-properties */
+    font-family: Roboto;
+    src: url('./fonts/Roboto/Roboto-Regular.ttf');
+}
+
 /********************************* Topbar ***********************************/
 
 @media only screen and (min-width: 769px) {
@@ -272,10 +307,12 @@ th, td {
 }
 
 .logo-APCA {
+    margin: 30px auto;
     width: 100%;
 }
 
-.title {
+.topbar-title {
+    font-family: Poppins;
     text-align: center;
     padding: 10px;
     font-weight: bold;
@@ -343,6 +380,7 @@ th, td {
 }
 
 .search-advanced-title {
+    font-family: Poppins;
     text-align: center;
     font-weight: bold;
     font-size: 20px;
@@ -398,8 +436,6 @@ th, td {
 
 .search-return-subtitle {
     margin-right: 10px;
-    font-weight: bold;
-    font-size: 30px;
 }
 
 .search-return-icon {
@@ -574,7 +610,7 @@ th, td {
     height: 20px;
     width: 20px;
     background: var(--yellow);
-    color: var(--blue);
+    color: var(--white);
     font-size: 0.5rem;
     font-weight: bold;
     border-radius: 50%;
@@ -679,6 +715,7 @@ th, td {
 }
 
 .panier-doublon-confirm-title {
+    font-family: Poppins;
     font-size: 25px;
 }
 
@@ -688,11 +725,13 @@ th, td {
         right: calc(45% - 40% / 2) !important;
     }
     .panier-del-confirm-title {
+        font-family: Poppins;
         font-size: 20px !important;
     }
 }
 
 .panier-del-confirm-title {
+    font-family: Poppins;
     font-size: 25px;
 }
 
@@ -795,6 +834,7 @@ TABLE {
 }
 
 .commandes-table-title {
+    font-family: Poppins;
     border-bottom: 1px solid var(--grey);
 }
 
@@ -805,6 +845,7 @@ TABLE {
 }
 
 .commandes-error-title {
+    font-family: Poppins;
     padding: 30px 0;
 }
 
@@ -815,6 +856,7 @@ TABLE {
 /****************************** Research no ********************************/
 
 .research-no-title {
+    font-family: Poppins;
     margin-top: 30px;
 }
 
@@ -898,12 +940,14 @@ TABLE {
 /****************************** CGV CGU ********************************/
 
 .cgv-annuaire-title {
+    font-family: Poppins;
     padding: 30px;
     font-size: 25px;
     font-weight: bold;
 }
 
 .cgv-title {
+    font-family: Poppins;
     padding: 10px 0;
 }
 
@@ -985,10 +1029,6 @@ TABLE {
     justify-content: space-between;
 }
 
-.select-contact {
-    color: var(--grey);
-}
-
 .tip_contact-line {
     width: 94%;
     margin: auto;
@@ -1018,12 +1058,6 @@ TABLE {
     .footer-content {
         width: 100%;
         margin: auto;
-    }
-}
-
-@media only screen and (min-width: 769px) {
-    .footer-links1 {
-        text-align: left !important;
     }
 }
 
@@ -1064,11 +1098,12 @@ TABLE {
 
 :root {
     --backgroud-dark: #DCDDD7;
-    --backgroud-light: #F2F2F1;
-    --red: #e94b35;
+    --backgroud-grey: #e1e1e1; /* Gris fond */
+    --red: #FF0015;
     --blue: #006f95;
-    --green: #038c36;
-    --yellow: #FEC402;
+    --green: #76bd22;
+    --yellow: #ff9900; /* Orange */
     --white: #FFF;
-    --grey: #6a6a6a;
+    --grey: #747373; /* Texte */
+    --grey-light: #b3b3b3; /* Texte form contact */
 }
