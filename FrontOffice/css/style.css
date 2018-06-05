@@ -216,7 +216,7 @@ th, td {
 @font-face {
     /* font-properties */
     font-family: Poppins;
-    src: url('./fonts/Poppins/poppins/Poppins-SemiBold.ttf.ttf');
+    src: url('./fonts/Poppins/poppins/Poppins-SemiBold.ttf');
 }
 
 @font-face {
@@ -380,10 +380,7 @@ th, td {
 }
 
 .search-advanced-title {
-    font-family: Poppins;
     text-align: center;
-    font-weight: bold;
-    font-size: 20px;
     margin: auto;
 }
 
