@@ -547,9 +547,16 @@ th, td {
     left: 0;
     right: 0;
     max-height: 200px;
-    padding: 77px 300px;
+    padding: 4% 17%;
     background: var(--yellow);
     border-radius: 4px;
+}
+
+@media only screen and (max-width: 769px) {
+    .modal-window {
+        max-height: 350px;
+        padding: 12% 17%;
+    }
 }
 
 .modal-background {
@@ -805,11 +812,11 @@ TABLE {
         padding-right: 10px;
         white-space: nowrap;
     }
-    /******** Panier ********/
-    .panier-table td:before, .recapitulatif-table td:before, .commandes-table td:before, .research-no-table td:before, .search-return-table td:before {
+    /******** Table responsive ********/
+    .panier-table td:before, .recapitulatif-table td:before, .commandes-table td:before, .research-no-table td:before, .search-return-table td:before, .annuaire-table td:before {
         content: attr(data-th);
     }
-    .panier-table-content, .recapitulatif-table-content, .commandes-table-content, .research-no-table-content, .search-return-table-content {
+    .panier-table-content, .recapitulatif-table-content, .commandes-table-content, .research-no-table-content, .search-return-table-content, .annuaire-table-content {
         margin: 20px auto;
     }
     /******** Resultat Recherche ********/
@@ -989,8 +996,16 @@ TABLE {
     padding: 20px 15px;
 }
 
-.annuaire-table tbody tr {
-    height: 92px;
+@media only screen and (min-width: 769px) {
+    .annuaire-table tbody tr {
+        height: 92px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .annuaire-table-content {
+        text-align: left;
+    }
 }
 
 .annuaire-table-block {
