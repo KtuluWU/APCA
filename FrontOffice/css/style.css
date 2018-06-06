@@ -40,7 +40,7 @@
 }
 
 body {
-    font-family: Roboto ;
+    font-family: Roboto;
 }
 
 .content {
@@ -99,7 +99,7 @@ th, td {
 }
 
 .text-white-APCA {
-    color: var(--white);
+    color: var(--white) !important;
 }
 
 .text-grey-dark-APCA {
@@ -343,7 +343,7 @@ th, td {
 }
 
 .icon-close {
-    color: var(--grey) !important;
+    color: var(--grey);
     line-height: 24px !important;
     position: absolute;
     right: 10px;
@@ -537,6 +537,31 @@ th, td {
     padding: 3px 5px;
 }
 
+/********************************* Modal ***********************************/
+
+.modal-window {
+    display: block;
+    position: fixed;
+    z-index: 100001;
+    top: 120px;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    padding: 77px 300px;
+    background: var(--yellow);
+    border-radius: 4px;
+}
+
+.modal-background {
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(116, 114, 115, 0.5);
+}
+
 /********************************* Article ***********************************/
 
 .article-text {
@@ -544,6 +569,7 @@ th, td {
 }
 
 .pave {
+    margin-top: 20px;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
@@ -1092,12 +1118,16 @@ TABLE {
 
 :root {
     --backgroud-dark: #DCDDD7;
-    --backgroud-grey: #e1e1e1; /* Gris fond */
+    --backgroud-grey: #e1e1e1;
+    /* Gris fond */
     --red: #FF0015;
     --blue: #006f95;
     --green: #76bd22;
-    --yellow: #ff9900; /* Orange */
+    --yellow: #ff9900;
+    /* Orange */
     --white: #FFF;
-    --grey: #747373; /* Texte */
-    --grey-light: #b3b3b3; /* Texte form contact */
+    --grey: #747373;
+    /* Texte */
+    --grey-light: #b3b3b3;
+    /* Texte form contact */
 }

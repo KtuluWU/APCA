@@ -53,7 +53,7 @@
   <!-- - - - - - - - - - - - Searche Advanced - - - - - - - - - - - -->
   <div class="search-advanced-block">
     <div class="search-advanced bg-grey-APCA text-grey-dark-APCA">
-      <i class="material-icons icon-close cursor-pointer">close</i>
+      <i id="sa_close" class="material-icons icon-close cursor-pointer">close</i>
       <div class=" col-md-4 col-sm-4 col-6 search-advanced-title">
         <span class="nowrap title">RECHERCHE AVANCÉE</span>
         <br>
@@ -90,6 +90,18 @@
     </div>
   </div>
 
+  <!-- - - - - - - - - - - - Modal - - - - - - - - - - - -->
+  <div class="modal-APCA">
+    <div class="modal-background"></div>
+    <div class="modal-window">
+      <i id="modal_close" class="material-icons icon-close cursor-pointer text-white-APCA">close</i>
+      <div class="modal-text text-center text-white-APCA">
+        Actifs agricoles, la délivrance gratuite de votre extrait d'inscription au registre des actifs agricoles ou de la copie intégrale
+        des mentions portées au registre par le CFE de la Chambre d'agriculture du département du lieu de l'exploitation
+        concernée sera possible à compter du 16/07.
+      </div>
+    </div>
+  </div>
   <!-- - - - - - - - - - - - Content - - - - - - - - - - - -->
   <div class="content">
 
@@ -113,8 +125,9 @@
         </p>
         <p class="font-italic text-red-APCA">
           Attention : en raison de contraintes techniques, le registre des actifs agricoles est opérationnel pour les exploitants dont
-          l’affiliation ATEXA a été réalisée par la MSA au plus tard courant juin 2018. Les situations postérieures ne seront
-          prises en compte qu’au premier trimestre 2019.
+          l’affiliation ATEXA (Assurance contre les accidents du travail et les maladies professionnelles) a été réalisée
+          par la Mutualité Sociale Agricole (MSA) au plus tard courant juin 2018. Les situations postérieures ne seront prises
+          en compte qu’au premier trimestre 2019.
         </p>
       </div>
 
@@ -125,9 +138,27 @@
             <div>Qui sommes nous ?</div>
           </div>
           <div class="pave qsnp text-justify">
-            Le registre des actifs agricoles est administré par Chambres d’agriculture France (Assemblée permanente des Chambres d’agriculture
-            - APCA), instance nationale du réseau des Chambres d’agriculture. Elle exerce une mission d’animation, d’appui
-            et de conseil auprès des Chambres dans leurs domaines d’intervention.
+            <p>
+              Le registre des actifs agricoles est administré par Chambres d’agriculture France (Assemblée permanente des Chambres d’agriculture
+              - APCA), instance nationale du réseau des Chambres d’agriculture. Cette instance exerce une mission d’animation,
+              d’appui et de conseil auprès des Chambres dans leurs domaines d’intervention.
+            </p>
+            <p>
+              Les Centres de Formalités des Entreprises (CFE) des Chambres d’agriculture constituent le guichet unique permettant aux entreprises
+              de déposer en un seul lieu leurs déclarations concernant leur création, les modifications de leur situation
+              et leur cessation d’activité. Sur demande, que vous soyez actif agricole ou tiers, vous recevrez de la part
+              du CFE de la Chambre d’agriculture du département du lieu de l’exploitation concernée.
+            </p>
+            <p>
+              <ul>
+                <li>un extrait attestant de l’inscription au registre des actifs agricoles</li>
+                <li>la copie intégrale des inscriptions portées au registre et des actes déposés concernant une même personne</li>
+                <li>un certificat attestant qu’une personne n’est pas inscrite au registre des actifs agricoles</li>
+              </ul>
+            </p>
+            <p>
+              Les coordonnées des CFE des Chambres d’agriculture sont disponibles en bas de page, rubrique « Annuaire des CFE ».
+            </p>
           </div>
         </div>
         <div class="col-md-6">
@@ -181,7 +212,8 @@
             </select>
           </div>
           <div class="textarea-contact-line">
-            <textarea id="contact_msg" name="contact_msg" class="input-border textarea-contact aa" autocomplete="off" maxlength="500" placeholder="Message *"></textarea>
+            <textarea id="contact_msg" name="contact_msg" class="input-border textarea-contact aa" autocomplete="off" maxlength="500"
+              placeholder="Message *"></textarea>
           </div>
           <div class="tip_contact-line">
             <span id="tip_contact" class="tip_contact text-red-APCA">Format d'e-mail invalide</span>
