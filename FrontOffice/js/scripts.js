@@ -16,9 +16,6 @@ $(document).ready(function () {
     $('#sa_close').click(function () {        // Animation de le croix pour fermer la "div" de Recherche Avancée
         $('.search-advanced-block').fadeOut();
     });
-    $('#modal_close').click(function () {        // Animation de le croix pour fermer la Modal
-        $('.modal-APCA').fadeOut();
-    });
     $('#qsn').click(function () {       // Deux images de la page Home (Qui sommes nous et Comment ça marche)
         $('.qsnp').toggleClass('open');
     })
