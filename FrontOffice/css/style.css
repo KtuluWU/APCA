@@ -1129,6 +1129,23 @@ TABLE {
     width: 97%;
 }
 
+/********************************* 404 ***********************************/
+
+.not-found {
+    padding: 160px 0;
+}
+
+.not-found .error-text {
+    /* width: 60%; */
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.not-found .container img {
+    height: 200px;
+}
+
 /********************************* Color ***********************************/
 
 :root {
